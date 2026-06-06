@@ -19,17 +19,23 @@ function ensureDataDir() {
 
 async function init() {
 	if (passwordHash && jwtSecret) return;
-	ensureDataDir();
 
-	if (existsSync(ADMIN_FILE)) {
-		const data = JSON.parse(readFileSync(ADMIN_FILE, 'utf-8')) as {
-			passwordHash: string;
-			jwtSecret?: string;
-		};
-		passwordHash = data.passwordHash;
-		if (data.jwtSecret) {
-			jwtSecret = new TextEncoder().encode(data.jwtSecret);
+	try {
+		ensureDataDir();
+
+		if (existsSync(ADMIN_FILE)) {
+			const data = JSON.parse(readFileSync(ADMIN_FILE, 'utf-8')) as {
+				passwordHash: string;
+				jwtSecret?: string;
+			};
+			passwordHash = data.passwordHash;
+			if (data.jwtSecret) {
+				jwtSecret = new TextEncoder().encode(data.jwtSecret);
+			}
 		}
+	} catch {
+		passwordHash = null;
+		jwtSecret = null;
 	}
 
 	if (!passwordHash) {
@@ -47,11 +53,21 @@ async function init() {
 		passwordHash,
 		jwtSecret: new TextDecoder().decode(jwtSecret)
 	};
-	writeFileSync(ADMIN_FILE, JSON.stringify(payload, null, 2));
 
-	if (!process.env.JWT_SECRET) {
-		console.log(`\nAdmin ready. JWT secret generated and stored in ${ADMIN_FILE}.`);
-		console.log('Set JWT_SECRET env var to use a stable secret across restarts.\n');
+	try {
+		writeFileSync(ADMIN_FILE, JSON.stringify(payload, null, 2));
+
+		if (!process.env.JWT_SECRET) {
+			console.log(`\nAdmin ready. JWT secret generated and stored in ${ADMIN_FILE}.`);
+			console.log('Set JWT_SECRET env var to use a stable secret across restarts.\n');
+		}
+	} catch {
+		if (!process.env.JWT_SECRET) {
+			console.log(
+				`\nAdmin ready. Filesystem is read-only, JWT secret is process-local and will not survive restarts.`
+			);
+			console.log('Set JWT_SECRET env var for a stable secret.\n');
+		}
 	}
 }
 
