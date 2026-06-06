@@ -1,6 +1,6 @@
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import defaultMenu from '../../../data/menu.json';
+import defaultMenu from './menu.default.json';
 
 const DATA_DIR = 'data';
 const MENU_FILE = join(DATA_DIR, 'menu.json');

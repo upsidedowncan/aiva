@@ -1,0 +1,489 @@
+{
+  "categories": [
+    {
+      "id": "burgers",
+      "category": "Бургеры",
+      "items": [
+        {
+          "id": "afonya",
+          "name": "Афоня",
+          "price": 100,
+          "description": "Соленый огурец, красный лук, котлета из говядины, томаты",
+          "image": "/images/afonya.jpg"
+        },
+        {
+          "id": "tsypa-mery",
+          "name": "Цыпа мэри",
+          "price": 140,
+          "description": "Сырный соус, соленый огурец, кинза, лук красный, лист салата, куриный фарш, томаты, сыр чеддер",
+          "image": "/images/tsypa-mery.jpg"
+        },
+        {
+          "id": "gril-chiken",
+          "name": "Гриль чикен",
+          "price": 150,
+          "description": "Сырный соус, соленый огурец, кинза, лист салата, лук красный, куриная грудка, томаты, сыр чеддер (холопеньо доп.)",
+          "image": "/images/gril-chiken.jpg"
+        },
+        {
+          "id": "pepperoni",
+          "name": "Пепперони",
+          "price": 150,
+          "description": "Сыр чеддер, копчёная колбаса, томаты, соленый огурец, лук красный, лист салата",
+          "image": "/images/pepperoni.jpg"
+        },
+        {
+          "id": "shef-miks",
+          "name": "Шеф микс",
+          "price": 300,
+          "description": "Котлета из говядины и курицы, томаты, соленый огурец, сырный соус",
+          "image": "/images/shef-miks.jpg"
+        },
+        {
+          "id": "tehasets",
+          "name": "Техасец",
+          "price": 190,
+          "description": "Сырный соус, соленый огурец, лук красный, лист салата, котлета из говядины, томаты, сыр чеддер",
+          "image": "/images/tehasets.jpg"
+        },
+        {
+          "id": "syr-da-myaso",
+          "name": "Сыр да мясо",
+          "price": 170,
+          "description": "Сырный соус, соленый огурец, красный лук, куриная грудка в панировке, томаты, сыр чеддер (холопеньо доп.)",
+          "image": "/images/syr-da-myaso.jpg"
+        },
+        {
+          "id": "ayva",
+          "name": "Айва",
+          "price": 250,
+          "description": "Сырный соус, соленый огурец, красный лук, большая котлета из говядины, томаты, сыр чеддер (холопеньо доп.)",
+          "image": "/images/ayva.jpg"
+        },
+        {
+          "id": "buynakskiy-paren",
+          "name": "Буйнакский парень",
+          "price": 200,
+          "description": "Соленый огурец, томаты, лук красный, говяжья ветчина, лист салата",
+          "image": "/images/buynakskiy-paren.jpg"
+        }
+      ]
+    },
+    {
+      "id": "shaurma",
+      "category": "Шаурма",
+      "items": [
+        {
+          "id": "shaurma-tandyr",
+          "name": "Шаурма в тандыре",
+          "price": 100,
+          "image": "/images/shaurma-tandyr.jpg"
+        },
+        {
+          "id": "shaurma-bulka",
+          "name": "Шаурма в булочке",
+          "price": 100,
+          "image": "/images/shaurma-bulka.jpg"
+        },
+        {
+          "id": "shaurma-lavash",
+          "name": "Шаурма в лаваше",
+          "price": 100,
+          "image": "/images/shaurma-lavash.jpg"
+        },
+        {
+          "id": "shaurma-meksika",
+          "name": "Шаурма мексика",
+          "price": 100,
+          "image": "/images/shaurma-meksika.jpg"
+        },
+        {
+          "id": "shaurma-syrnaya",
+          "name": "Шаурма сырная",
+          "price": 100,
+          "image": "/images/shaurma-syrnaya.jpg"
+        },
+        {
+          "id": "shaurma-max",
+          "name": "Шаурма max",
+          "price": 150,
+          "image": "/images/shaurma-max.jpg"
+        },
+        {
+          "id": "shaurma-klyar",
+          "name": "Шаурма в кляре",
+          "price": 150,
+          "image": "/images/shaurma-klyar.jpg"
+        },
+        {
+          "id": "shaurma-tarelka",
+          "name": "Шаурма в тарелке",
+          "price": 150,
+          "image": "/images/shaurma-tarelka.jpg"
+        },
+        {
+          "id": "shaurma-govyadina",
+          "name": "Шаурма с говядиной",
+          "price": 130,
+          "image": "/images/shaurma-govyadina.jpg"
+        },
+        {
+          "id": "shaurma-assorti",
+          "name": "Шаурма ассорти",
+          "price": 100,
+          "image": "/images/shaurma-assorti.jpg"
+        },
+        {
+          "id": "shaurma-detskaya",
+          "name": "Шаурма детская",
+          "price": 50,
+          "image": "/images/shaurma-detskaya.jpg"
+        },
+        {
+          "id": "durum-kurinyy",
+          "name": "Дурум куриный",
+          "price": 100,
+          "image": "/images/durum-kurinyy.jpg"
+        },
+        {
+          "id": "durum-myasnoy",
+          "name": "Дурум мясной",
+          "price": 150,
+          "image": "/images/durum-myasnoy.jpg"
+        },
+        {
+          "id": "hot-dog",
+          "name": "Хот-дог",
+          "price": 50,
+          "image": "/images/hot-dog.jpg"
+        },
+        {
+          "id": "hot-dog-dvoynoy",
+          "name": "Двойной хот-дог",
+          "price": 65,
+          "image": "/images/hot-dog-dvoynoy.jpg"
+        },
+        {
+          "id": "hot-dog-naggetsy",
+          "name": "Хот-дог с наггестами",
+          "price": 90,
+          "image": "/images/hot-dog-naggetsy.jpg"
+        },
+        {
+          "id": "hot-dog-lavash",
+          "name": "Хот-дог в лаваше",
+          "price": 55,
+          "image": "/images/hot-dog-lavash.jpg"
+        }
+      ]
+    },
+    {
+      "id": "snacks",
+      "category": "Снэки и шашлычок",
+      "items": [
+        {
+          "id": "fri-standart",
+          "name": "Фри стандарт",
+          "price": 70,
+          "image": "/images/fri-standart.jpg"
+        },
+        {
+          "id": "fri-bolshoy",
+          "name": "Фри большой",
+          "price": 100,
+          "image": "/images/fri-bolshoy.jpg"
+        },
+        {
+          "id": "kartofel-derevenskiy",
+          "name": "Картофель по-деревенски",
+          "price": "70/100",
+          "image": "/images/kartofel-derevenskiy.jpg"
+        },
+        {
+          "id": "naggetsy",
+          "name": "Наггетсы",
+          "price": 110,
+          "image": "/images/naggetsy.jpg"
+        },
+        {
+          "id": "shashlyk-govyadina",
+          "name": "Шашлык из говядины",
+          "price": 120,
+          "image": "/images/shashlyk-govyadina.jpg"
+        },
+        {
+          "id": "shashlyk-kurinyy",
+          "name": "Шашлык куриный",
+          "price": "100/200",
+          "image": "/images/shashlyk-kurinyy.jpg"
+        },
+        {
+          "id": "lulya-kebab-govyadina",
+          "name": "Люля-кебаб из говядины",
+          "price": "120/160",
+          "image": "/images/lulya-kebab-govyadina.jpg"
+        },
+        {
+          "id": "lulya-kebab-kuritsa",
+          "name": "Люля-кебаб из курицы",
+          "price": "100/150",
+          "image": "/images/lulya-kebab-kuritsa.jpg"
+        },
+        {
+          "id": "ostrye-krylyshki",
+          "name": "Острые крылышки",
+          "price": 150,
+          "image": "/images/ostrye-krylyshki.jpg"
+        },
+        {
+          "id": "griby-mangal",
+          "name": "Грибы на мангале",
+          "price": 150,
+          "image": "/images/griby-mangal.jpg"
+        },
+        {
+          "id": "kartoshka-kurdyuk",
+          "name": "Картошка с курдюком",
+          "price": 100,
+          "image": "/images/kartoshka-kurdyuk.jpg"
+        },
+        {
+          "id": "tomaty-mangal",
+          "name": "Томаты на мангале",
+          "price": 100,
+          "image": "/images/tomaty-mangal.jpg"
+        },
+        {
+          "id": "skumbriya",
+          "name": "Скумбрия",
+          "price": 200,
+          "image": "/images/skumbriya.jpg"
+        },
+        {
+          "id": "uzbekskiy-plov",
+          "name": "Узбекский плов",
+          "price": "100/150",
+          "image": "/images/uzbekskiy-plov.jpg"
+        },
+        {
+          "id": "salat-tsezar",
+          "name": "Салат цезарь",
+          "price": 100,
+          "image": "/images/salat-tsezar.jpg"
+        },
+        {
+          "id": "salat-domashniy",
+          "name": "Салат домашний",
+          "price": 100,
+          "image": "/images/salat-domashniy.jpg"
+        },
+        {
+          "id": "salat-turetski",
+          "name": "Салат по турецки",
+          "price": 100,
+          "image": "/images/salat-turetski.jpg"
+        },
+        {
+          "id": "ovoshchnaya-narezka",
+          "name": "Овощная нарезка",
+          "price": 100,
+          "image": "/images/ovoshchnaya-narezka.jpg"
+        },
+        {
+          "id": "kuritsa-ugli",
+          "name": "Курица на углях",
+          "price": 550,
+          "image": "/images/kuritsa-ugli.jpg"
+        }
+      ]
+    },
+    {
+      "id": "drinks",
+      "category": "Напитки",
+      "items": [
+        {
+          "id": "chay",
+          "name": "Чай чёрный",
+          "price": 50,
+          "image": "/images/chay.jpg"
+        },
+        {
+          "id": "chay-zelenyy",
+          "name": "Чай зелёный",
+          "price": 50,
+          "image": "/images/chay-zelenyy.jpg"
+        },
+        {
+          "id": "kofe-amerikano",
+          "name": "Кофе американо",
+          "price": 100,
+          "image": "/images/kofe-amerikano.jpg"
+        },
+        {
+          "id": "kofe-kapuchino",
+          "name": "Кофе капучино",
+          "price": 150,
+          "image": "/images/kofe-kapuchino.jpg"
+        },
+        {
+          "id": "kofe-latte",
+          "name": "Кофе латте",
+          "price": 170,
+          "image": "/images/kofe-latte.jpg"
+        },
+        {
+          "id": "ayran",
+          "name": "Айран",
+          "price": 80,
+          "image": "/images/ayran.jpg"
+        },
+        {
+          "id": "cola",
+          "name": "Кока-Кола 0.5",
+          "price": 100,
+          "image": "/images/cola.jpg"
+        },
+        {
+          "id": "fanta",
+          "name": "Фанта 0.5",
+          "price": 100,
+          "image": "/images/fanta.jpg"
+        },
+        {
+          "id": "sprite",
+          "name": "Спрайт 0.5",
+          "price": 100,
+          "image": "/images/sprite.jpg"
+        },
+        {
+          "id": "limonad",
+          "name": "Лимонад домашний",
+          "price": 120,
+          "image": "/images/limonad.jpg"
+        },
+        {
+          "id": "kompot",
+          "name": "Компот",
+          "price": 80,
+          "image": "/images/kompot.jpg"
+        },
+        {
+          "id": "sok-apelsin",
+          "name": "Сок апельсиновый",
+          "price": 100,
+          "image": "/images/sok-apelsin.jpg"
+        },
+        {
+          "id": "sok-yabloko",
+          "name": "Сок яблочный",
+          "price": 100,
+          "image": "/images/sok-yabloko.jpg"
+        },
+        {
+          "id": "sok-vishnya",
+          "name": "Сок вишнёвый",
+          "price": 100,
+          "image": "/images/sok-vishnya.jpg"
+        },
+        {
+          "id": "voda",
+          "name": "Вода",
+          "price": 60,
+          "image": "/images/voda.jpg"
+        },
+        {
+          "id": "molochnyy-kokteyl",
+          "name": "Молочный коктейль",
+          "price": 180,
+          "image": "/images/molochnyy-kokteyl.jpg"
+        }
+      ]
+    }
+  ],
+  "addonsByCategory": {
+    "burgers": [
+      {
+        "id": "jalapeno",
+        "name": "Халапеньо",
+        "price": 30
+      },
+      {
+        "id": "cheese",
+        "name": "Сыр чеддер",
+        "price": 40
+      },
+      {
+        "id": "patty",
+        "name": "Доп. котлета",
+        "price": 60
+      }
+    ],
+    "shaurma": [
+      {
+        "id": "jalapeno",
+        "name": "Халапеньо",
+        "price": 20
+      },
+      {
+        "id": "sauce",
+        "name": "Доп. соус",
+        "price": 20
+      }
+    ],
+    "snacks": [
+      {
+        "id": "sauce",
+        "name": "Доп. соус",
+        "price": 20
+      },
+      {
+        "id": "cheese",
+        "name": "Сырный соус",
+        "price": 40
+      }
+    ],
+    "drinks": []
+  },
+  "pairingsByCategory": {
+    "burgers": [
+      "fri-standart",
+      "kartofel-derevenskiy",
+      "kompot",
+      "cola",
+      "ayran",
+      "fri-bolshoy",
+      "naggetsy",
+      "limonad"
+    ],
+    "shaurma": [
+      "ayran",
+      "cola",
+      "kompot",
+      "limonad",
+      "fri-standart",
+      "salat-domashniy",
+      "chay",
+      "sok-yabloko"
+    ],
+    "snacks": [
+      "ayran",
+      "cola",
+      "limonad",
+      "chay",
+      "kompot",
+      "salat-tsezar",
+      "kofe-amerikano",
+      "molochnyy-kokteyl"
+    ],
+    "drinks": [
+      "kofe-kapuchino",
+      "kofe-latte",
+      "chay",
+      "cola",
+      "limonad",
+      "kompot",
+      "sok-apelsin",
+      "ayran"
+    ]
+  }
+}
