@@ -1,5 +1,6 @@
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
+import defaultMenu from '../../../data/menu.json';
 
 const DATA_DIR = 'data';
 const MENU_FILE = join(DATA_DIR, 'menu.json');
@@ -34,17 +35,26 @@ let cache: MenuData | null = null;
 
 function load(): MenuData {
 	if (cache) return cache;
-	if (!existsSync(MENU_FILE)) {
-		throw new Error(`Menu file not found at ${MENU_FILE}`);
+	try {
+		if (existsSync(MENU_FILE)) {
+			const raw = readFileSync(MENU_FILE, 'utf-8');
+			cache = JSON.parse(raw) as MenuData;
+			return cache;
+		}
+	} catch {
+		// fall through to bundled default
 	}
-	const raw = readFileSync(MENU_FILE, 'utf-8');
-	cache = JSON.parse(raw) as MenuData;
+	cache = structuredClone(defaultMenu) as MenuData;
 	return cache;
 }
 
 function save(data: MenuData) {
 	cache = data;
-	writeFileSync(MENU_FILE, JSON.stringify(data, null, 2) + '\n');
+	try {
+		writeFileSync(MENU_FILE, JSON.stringify(data, null, 2) + '\n');
+	} catch {
+		// read-only filesystem (e.g. serverless): keep in-memory only
+	}
 }
 
 export function getMenu(): MenuData {
